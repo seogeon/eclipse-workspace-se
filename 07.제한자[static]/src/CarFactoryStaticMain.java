@@ -14,6 +14,7 @@ public class CarFactoryStaticMain {
 
 		System.out.println("차량생산대수:"+Car.count);
 		System.out.println("차량생산대수:"+car1.count);
+		
 		System.out.println("차량생산대수:"+car2.count);
 		System.out.println("차량생산대수:"+car3.count);
 		

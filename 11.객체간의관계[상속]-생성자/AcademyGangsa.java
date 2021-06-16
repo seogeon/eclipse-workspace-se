@@ -3,12 +3,13 @@ public class AcademyGangsa extends AcademyMember {
 	public AcademyGangsa() {
 	}
 	public AcademyGangsa(int no,String name,String subject) {
-		this.no=no;
-		this.name=name;
+		super();
+		this.setNo(no);
+		this.setName(name);
 		this.subject = subject;
 	}
-	public void gangsaPrint() {
-		this.print();
+	public void print() {
+		super.print();
 		System.out.println(this.subject);
 	}
 	public String getSubject() {

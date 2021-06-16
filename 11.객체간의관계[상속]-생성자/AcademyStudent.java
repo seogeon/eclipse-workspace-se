@@ -34,8 +34,7 @@ public class AcademyStudent extends AcademyMember {
 	}
 	//alt+shift+s --> o
 	public AcademyStudent(int no,String name,String ban) {
-		this.no=no;
-		this.name=name;
+		super(no, name);
 		this.ban=ban;
 	}
 	//alt+shift+s --> r
@@ -45,8 +44,8 @@ public class AcademyStudent extends AcademyMember {
 	public void setBan(String ban) {
 		this.ban = ban;
 	}
-	public void studentPrint() {
-		this.print();
+	public void print() {
+		super.print();
 		System.out.println(this.ban);
 	}
 	

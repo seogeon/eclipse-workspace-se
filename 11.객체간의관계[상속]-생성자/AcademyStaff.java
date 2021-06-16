@@ -4,13 +4,12 @@ public class AcademyStaff extends AcademyMember {
 	}
 	//alt+shift+s --> o
 	public AcademyStaff(int no,String name,String depart) {
-		this.no=no;
-		this.name=name;
+		super(no, name);
 		this.depart = depart;
 	}
 	
-	public void staffPrint() {
-		this.print();
+	public void print() {
+		super.print();
 		System.out.println(depart);
 	}
 	

@@ -10,6 +10,7 @@ public class YSChild extends YS {
 		this.member2=2;
 		/*
 		this.member3=3;
+		
 		this.member4=4;
 		*/
 		this.method1();

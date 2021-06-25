@@ -35,6 +35,13 @@ public class HashMapMain {
 		removeCar.print();
 		System.out.println("map size:"+carMap.size());
 		System.out.println("1.전체 차량출력????");
+		Iterator keyIter = carMap.keySet().iterator();
+		while(keyIter.hasNext()) {
+			String key=(String)keyIter.next();
+			Car tempCar=(Car)carMap.get(key);
+			tempCar.print();
+		}
+		
 		System.out.println("2.입차");
 		carMap.put("3243", new Car("3243", 6));
 		System.out.println("map size:"+carMap.size());

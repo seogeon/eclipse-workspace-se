@@ -1,0 +1,5 @@
+package wrapper;
+
+class WrapperClassMain {
+
+}

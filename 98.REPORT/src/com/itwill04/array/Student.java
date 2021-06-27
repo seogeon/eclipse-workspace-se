@@ -18,7 +18,7 @@ package com.itwill04.array;
 		private int tot;
 		private double avg;
 		private char grade;
-		private int rank;
+		private int rank=1;
 		/*
 		 * <<생성자메쏘드 선언[오버로딩]>>
 		 *  - 인자 0개짜리 생성자(기본생성자선언) 

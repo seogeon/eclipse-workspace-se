@@ -1,4 +1,7 @@
 package node_stream;
+
+import java.io.FileInputStream;
+
 /*
  * <<입력스트림사용>>
  * 1. 데이타 source 선정(파일)
@@ -8,9 +11,23 @@ package node_stream;
  */
 public class FileInputStreamMain {
 	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public static void main(String[] args) throws Exception {
+		FileInputStream fis=new FileInputStream("fileOut.dat");
+		int readByte = fis.read();
+		
+		System.out.println("1.byte:"+Integer.toBinaryString(readByte));
+		readByte = fis.read();
+		System.out.println("2.byte:"+Integer.toBinaryString(readByte));
+		readByte = fis.read();
+		System.out.println("3.byte:"+Integer.toBinaryString(readByte));
+		
+		while(true) {
+			readByte=fis.read();
+			if(readByte==-1)break;
+			System.out.println(Integer.toBinaryString(readByte));
+		}
+		fis.close();
+		System.out.println("FileInputStream.read()-->fileOut.dat");
 	}
 
 }

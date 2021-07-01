@@ -5,6 +5,7 @@ import java.util.Iterator;
 
 public class GenericHashMapMain {
 
+<<<<<<< HEAD
 	public static void main(String[] args) {
 		HashMap<String, Car> carMap=new HashMap<String, Car>();
 		System.out.println("#map size:"+carMap.size());
@@ -78,3 +79,9 @@ public class GenericHashMapMain {
 	}
 
 }
+=======
+	
+	
+	
+}
+>>>>>>> branch 'master' of https://github.com/seogeon/eclipse-workspace-se.git
